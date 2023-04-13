@@ -166,6 +166,19 @@ Hero
   justify-content: center;
   align-items: center;
   text-align: center;
+  transition-property: opacity; /* Change transition property to opacity */
+  transition-duration: 0.5s; /* Update transition duration to 0.5s */
+  transition-timing-function: ease; /* Update transition timing function to ease */
+}
+
+.cover:hover {
+  opacity: 0; /* Update property to be transitioned on hover */
+  transition-delay: 0.5s;
+}
+
+.cover:hover::after {
+  display: block;
+
 }
 .cover p{
   margin: 0 auto;
