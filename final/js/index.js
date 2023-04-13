@@ -18,12 +18,22 @@ while (random3 === random1 || random3 === random2 || recettesDB[random2].categor
 var random4 = Math.floor(Math.random() * 4)+1;
 
 
+const item1=document.getElementsByClassName("item");
+item1[0].setAttribute("href", 'details.html?recette='+(random1+1));
+item1[1].setAttribute("href", 'details.html?recette='+(random2+1));
+item1[2].setAttribute("href",'details.html?recette='+(random3+1));
+
+
+
 const cover1= document.getElementById("categorie1");
 cover1.textContent = recettesDB[random1].category;
+cover1.href='details.html?recette='+(random1+1);
 const cover2= document.getElementById("categorie2");
 cover2.textContent = recettesDB[random2].category;
+cover1.href='details.html?recette='+(random2+1);
 const cover3= document.getElementById("categorie3");
 cover3.textContent = recettesDB[random3].category;
+cover1.href='details.html?recette='+(random3+1);
 
 
 var link1= document.getElementsByClassName("recette1");
@@ -65,22 +75,4 @@ var paragraphe3 = document.getElementById("recipe-p3");
 paragraphe3.textContent = "catégorie : "+ recettesDB[random3].category+" | durée : "+ recettesDB[random3].duration;
 
 
-
-// Get all elements with the class "cover"
-var coverElements = document.getElementsByClassName("cover");
-
-// Loop through each cover element
-for (var i = 0; i < coverElements.length; i++) {
-  // Add a mouseover event listener to each cover element
-  coverElements[i].addEventListener("mouseover", function() {
-    // Add the "hidden" id attribute to the hovered element
-    this.id = "hidden";
-  });
-
-  // Add a mouseout event listener to each cover element
-  coverElements[i].addEventListener("mouseout", function() {
-    // Remove the "hidden" id attribute from the element when the mouse is moved away
-    this.removeAttribute("id");
-  });
-}
 
