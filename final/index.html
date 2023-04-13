@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cooking.com </title>
+    
+    <link rel="shortcut icon" type="image" href="\assets\logo\frame.png">
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index_catalogue.css">
+    <link rel="stylesheet" href="./css/page.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/Footer.css"">
+
+  </head>
+  <body>
+
+
+    <nav class="navbar">
+      <div class="nav-center">
+          <div class="nav-header">
+              <a href="index.html" class="nav-logo">
+                  <img src="\assets\logo\logo.png" alt="Ycook">
+              </a>
+              <button type="button" class="btn nav-btn">
+                  <i class="gg-format-justify"></i>
+              </button>
+          </div>
+          <div class="nav-links">
+
+              <div class="recherche">
+                  <div class="search_wrap search_wrap_6" id="hidden">
+                      <div class="search_box">
+                          <input type="text" class="input" placeholder="Rechercher...">
+                          <i class="gg-search"></i>
+                          <div class="button">
+                            
+                          </div>
+                      </div>
+                  </div>
+                  
+              </div>
+
+              <div class="pages">
+                  <a href="#" class="nav-link rech_btn" id="itshidden" >Recherche</a>
+                  <div class="nav-link contact-link">
+                      <a href="index.html" class="btn">Home</a>
+                  </div>
+                  <a href="catalogue.html" class="nav-link">Catalogue</a>
+              </div>
+
+          </div>
+      </div>
+  </nav>
+
+
+
+    <main class="page">
+
+      <header class="hero">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>You cook</h1>
+            <h4>Mettez les petits plats dans les grands avec Cooking.com !</h4>
+          </div>
+        </div>
+      </header>
+
+      <div class="presentation">
+        <h3>
+          Bienvenue sur Cooking.com, le site de recettes de cuisine en ligne !
+        </h3>
+        <p>
+          Cooking.com est un site de recettes de cuisine. Vous trouverez ici des
+          recettes de cuisine faciles et rapides à réaliser. et bientot bien plus ...
+        </p>
+        
+      </div>
+      <h3>Tendance :</h3>
+      <div class="recipes-list">
+
+          <div class="item">
+
+            <a href="details.html?recette=8" class="recipe recette1">
+              <img
+                src=".\assets\recettes\8\1.png"
+                class="img recipe-img"
+                id="recipe-img1"
+                alt="RECETTE 1"
+              />
+              <h5 class="name" id="recipe-title1">Chorba Frik</h5>
+              <p id="recipe-p1">catégorie : Entrée | durée : 45 minutes</p>
+            </a>
+
+            <div href="#" class="cover">
+                  <p id="categorie1"></p>
+            </div>
+
+          </div>
+
+          <div class="item">
+
+            <a href="details.html?recette=7" class="recipe  recette2">
+              <img
+                src=".\assets\recettes\7\1.png"
+                class="img recipe-img "
+                id="recipe-img2"
+                alt="RECETTE 2"
+              />
+              <h5 class="name"  id="recipe-title2">Tajine de poulet aux olives</h5>
+              <p  id="recipe-p2">catégorie : Déjeuner | durée : 1 heure</p>
+            </a>
+
+            <div href="#" class="cover">
+                  <p id="categorie2"></p>
+            </div>
+
+          </div>
+
+          <div class="item">
+            <a href="details.html?recette=1" class="recipe  recette3">
+              <img
+                src=".\assets\recettes\1\1.png"
+                class="img recipe-img"
+                id="recipe-img3"
+                alt="RECETTE 3"
+              />
+              <h5 class="name"  id="recipe-title3">Foul Modammas</h5>
+              <p  id="recipe-p3">catégorie : Petit déjeuner | durée : 30 minutes</p>
+            </a>
+
+            <div class="cover">
+                <p id="categorie3"></p>
+            </div>
+
+          </div>
+
+          
+          
+          
+      </div>
+      <h3>Recommandation du jour :</h3>
+      <div class="Recommandation">
+        
+       
+      </div>
+
+
+    </main>
+
+
+
+
+
+    <footer class="footer">
+
+      <div class="page-footer">
+          <div class="footer-link">
+              <a href="catalogue.html">Catalogue</a>
+          </div>
+          <div class="footer-logo">
+              <a href="index.html" class="nav-logo">
+                  <img src="\assets\logo\logo.png" alt="Ycook">
+              </a>
+          </div>
+          <div class="footer-link">
+              <a href="Recherche.html">Recherche</a>
+          </div>
+      </div>
+      
+      <div class="legalmentions">
+          <p>
+              &copy; <span>Ycook </span><span id="date"></span>. Tous droits réservés
+          </p>
+      </div>
+      
+  </footer>
+
+    <!-- end of footer -->
+
+
+
+
+
+
+
+    
+  </body>
+  <script src="./js/nav_footer.js"  type="module"></script>
+  <script src="./js/index.js" type="module"></script>
+  <script src="./js/recommandation.js" type="module"></script>
+</html>
