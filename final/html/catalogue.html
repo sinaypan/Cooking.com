@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalogue</title>
+
+    <link rel="shortcut icon" type="image" href="..\assets\logo\frame.png">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/index_catalogue.css">
+    <link rel="stylesheet" href="../css/page.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/Footer.css"">
+
+  </head>
+  <body>
+
+    <nav class="navbar">
+      <div class="nav-center">
+          <div class="nav-header">
+              <a href="index.html" class="nav-logo">
+                  <img src="..\assets\logo\logo2.png" alt="Ycook">
+              </a>
+              <button type="button" class="btn nav-btn">
+                  <i class="gg-format-justify"></i>
+              </button>
+          </div>
+          <div class="nav-links">
+
+              <div class="recherche">
+                  <div class="search_wrap search_wrap_6" id="hidden">
+                      <div class="search_box">
+                          <input type="text" class="input" placeholder="Rechercher...">
+                          <i class="gg-search"></i>
+                          <div class="button">
+                          </div>
+                      </div>
+                  </div>
+                  
+              </div>
+
+              <div class="pages">
+                  <a href="#" class="nav-link rech_btn" id="itshidden" >Recherche</a>
+                  
+                      <a href="index.html" class="nav-link">Home</a>
+                  <div class="nav-link contact-link">
+                    <a href="catalogue.html" class="btn">Catalogue</a>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </nav>
+
+
+  <main class="page">
+    <div class="selector">
+        <select name="categorie" class="selector-box">
+            <option value="tout">tout</option>
+            <option value="Petitdéjeuner">Petit déjeuner</option>
+            <option value="Déjeuner">Déjeuner</option>
+            <option value="Dîner">Dîner</option>
+            <option value="Platprincipal">Plat principal</option>
+            <option value="Entrée">Entrée</option>
+        </select>
+        <div class="icon-container">
+            <i class="gg-arrow-down-o"></i>
+        </div>
+    </div>
+    
+    <div class="recipes-list">
+
+      <!--DOM -->
+
+    </div>
+
+    </section>
+  </main>
+
+
+
+  <footer class="footer">
+
+    <div class="page-footer">
+        <div class="footer-link">
+            <a href="catalogue.html">Catalogue</a>
+        </div>
+        <div class="footer-logo">
+            <a href="index.html" class="nav-logo">
+                <img src="..\assets\logo\logo2.png" alt="Ycook">
+            </a>
+        </div>
+        <div class="footer-link">
+            <a href="Presentation.html">Presentation</a>
+        </div>
+    </div>
+    
+    <div class="legalmentions">
+        <p>
+            &copy; <span>Ycook </span><span id="date"></span>. Tous droits réservés
+        </p>
+    </div>
+    
+</footer>
+
+  
+</body>
+
+<script src="../js/nav_footer.js" type="module"></script>
+<script src="../js/catalogue.js" type="module"></script>
+</html>
